@@ -5,7 +5,7 @@
  * "Enter desk" control from this file.
  */
 window.PANTHEON = {
-  deskUrl: "https://temporary-express-walnut-1pi14hq.vercel.app",
+  deskUrl: "https://temporary-nimble-redwood-gy6a0sy.vercel.app",
   /* Live lots / session P&L — desk only. Brand page never publishes a track record. */
   deskPositionsHash: "#positions",
   handle: "@PantheonPTH",

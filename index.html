@@ -2,225 +2,290 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PANTHEON · PTH</title>
-  <meta name="description" content="Pantheon (PTH) — multi-cabin crypto trading desk. TRON live; SOL, BSC, RH, Polymarket paper. Elite process. On-chain first." />
-  <style>
-    :root {
-      --bg: #050505;
-      --bg-elev: #0a0a0a;
-      --gold: #c9a227;
-      --gold-dim: #8a7020;
-      --text: #f5f5f5;
-      --muted: #8a8a8a;
-      --line: #1c1c1c;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body {
-      min-height: 100%;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 3rem 1.25rem 4rem;
-      background:
-        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(201, 162, 39, 0.08), transparent 60%),
-        var(--bg);
-    }
-    .mark {
-      width: 72px;
-      height: 72px;
-      margin-bottom: 1.75rem;
-    }
-    .mark svg { width: 100%; height: 100%; display: block; }
-    header {
-      text-align: center;
-      max-width: 36rem;
-      margin-bottom: 3rem;
-    }
-    .wordmark {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2rem, 6vw, 3rem);
-      font-weight: 700;
-      letter-spacing: 0.35em;
-      text-indent: 0.35em;
-      color: var(--text);
-      line-height: 1.1;
-    }
-    .short {
-      margin-top: 0.65rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.55em;
-      text-indent: 0.55em;
-      color: var(--gold);
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-    .rule {
-      width: 48px;
-      height: 1px;
-      background: var(--gold);
-      margin: 1.5rem auto;
-      opacity: 0.85;
-    }
-    .tagline {
-      font-size: 0.95rem;
-      line-height: 1.65;
-      color: var(--muted);
-      font-weight: 400;
-    }
-    .tagline strong {
-      color: var(--text);
-      font-weight: 500;
-    }
-    .cabins {
-      width: 100%;
-      max-width: 28rem;
-      border: 1px solid var(--line);
-      background: var(--bg-elev);
-      margin-bottom: 2.5rem;
-    }
-    .cabins h2 {
-      font-size: 0.65rem;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--gold-dim);
-      padding: 0.9rem 1.25rem;
-      border-bottom: 1px solid var(--line);
-      font-weight: 600;
-    }
-    ul { list-style: none; }
-    li {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 1rem;
-      padding: 0.95rem 1.25rem;
-      border-bottom: 1px solid var(--line);
-      font-size: 0.9rem;
-    }
-    li:last-child { border-bottom: none; }
-    .cabin-name {
-      font-family: Georgia, "Times New Roman", serif;
-      letter-spacing: 0.08em;
-      color: var(--text);
-    }
-    .mode {
-      font-size: 0.7rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .mode.live { color: var(--gold); }
-    .cta {
-      display: inline-block;
-      padding: 0.95rem 1.75rem;
-      border: 1px solid var(--gold);
-      color: var(--gold);
-      text-decoration: none;
-      font-size: 0.75rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      font-weight: 600;
-      transition: background 0.2s ease, color 0.2s ease;
-      margin-bottom: 2.75rem;
-    }
-    .cta:hover {
-      background: var(--gold);
-      color: var(--bg);
-    }
-    .socials {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem 1.25rem;
-      margin-bottom: 3rem;
-    }
-    .socials a {
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.7rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      border-bottom: 1px solid transparent;
-      padding-bottom: 2px;
-    }
-    .socials a:hover {
-      color: var(--text);
-      border-bottom-color: var(--line);
-    }
-    footer {
-      text-align: center;
-      max-width: 28rem;
-      font-size: 0.7rem;
-      line-height: 1.6;
-      color: #555;
-      letter-spacing: 0.04em;
-    }
-    footer .meta {
-      margin-bottom: 0.5rem;
-      color: var(--muted);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      font-size: 0.65rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>PANTHEON · PTH — Trading Cabin</title>
+  <meta name="description" content="PANTHEON (PTH) multi-cabin crypto trading desk. TRON live; SOL, BSC, RH, Polymarket paper. Hard rules as policy — no fabricated PnL." />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta property="og:title" content="PANTHEON · PTH — Trading Cabin" />
+  <meta property="og:description" content="Staff desk. Cabin map. Hard-rule policy. Enter the live trading terminal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lkim25295-source.github.io/pantheon-brand/" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="mark" aria-hidden="true">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-      <rect width="512" height="512" fill="#0a0a0a"/>
-      <polygon points="256,72 420,200 92,200" fill="none" stroke="#c9a227" stroke-width="6"/>
-      <rect x="130" y="200" width="28" height="160" fill="#c9a227"/>
-      <rect x="242" y="200" width="28" height="160" fill="#c9a227"/>
-      <rect x="354" y="200" width="28" height="160" fill="#c9a227"/>
-      <rect x="92" y="360" width="328" height="14" fill="#c9a227"/>
-      <rect x="110" y="380" width="292" height="8" fill="#f5f5f5" opacity="0.85"/>
-      <text x="256" y="450" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" letter-spacing="8" fill="#c9a227">PTH</text>
-    </svg>
+  <a class="skip" href="#main">Skip to cabin</a>
+
+  <div class="desk">
+    <header class="row-header" aria-label="Desk chrome">
+      <div class="header-brand">
+        <span class="logo-mark" aria-hidden="true">◆</span>
+        <div class="header-title">PANTHEON<span class="header-op">/PTH</span></div>
+        <span class="header-pair">TRON · SUNSWAP</span>
+      </div>
+      <div class="header-meta">
+        <span class="live-pill"><span class="pulse"></span>LIVE</span>
+        <span class="mode-pill">PUBLIC FACE</span>
+        <span class="clock mono" id="clock" aria-label="UTC clock">--:--:-- UTC</span>
+        <a class="header-cta" data-desk href="#">Enter desk</a>
+      </div>
+    </header>
+
+    <section class="kpi-strip" aria-label="Identity and policy — not performance">
+      <div class="kpi">
+        <span class="kpi-lab">IDENTITY</span>
+        <span class="kpi-val">PTH DESK</span>
+        <span class="kpi-sub">Staff cabin · not a fund pitch</span>
+      </div>
+      <div class="kpi">
+        <span class="kpi-lab">CABIN MODE</span>
+        <span class="kpi-val pos">TRON LIVE</span>
+        <span class="kpi-sub">4 paper rails · no live size</span>
+      </div>
+      <div class="kpi kpi-rules">
+        <span class="kpi-lab">HARD RULES · POLICY</span>
+        <span class="rule" data-rule="dd">DD ≤ 5%</span>
+        <span class="rule" data-rule="halt">HALT 100×</span>
+        <span class="rule" data-rule="cap">CAP 100 TRX + 1000 USDT</span>
+        <span class="kpi-sub">Labels only. Not returns. Not a track record.</span>
+      </div>
+      <div class="kpi">
+        <span class="kpi-lab">STAFF</span>
+        <span class="kpi-val" data-bind="boss">kim God</span>
+        <span class="kpi-sub">Boss · CoS <span data-bind="cos">Prime</span></span>
+      </div>
+    </section>
+
+    <div class="row-main" id="main">
+      <aside class="col-left" aria-label="Cabin board">
+        <div class="panel cabin-list">
+          <div class="panel-head">
+            <div>
+              <div class="kicker">Board</div>
+              <div class="panel-title">Cabins</div>
+            </div>
+            <span class="rule">LIVE / PAPER</span>
+          </div>
+          <ul>
+            <li class="cabin-row">
+              <span class="cabin-chain">TRON</span>
+              <span>
+                <span class="cabin-venue">SunSwap</span>
+                <div class="cabin-meta mono">Live rail · watching</div>
+              </span>
+              <span class="live-pill"><span class="pulse"></span>LIVE</span>
+            </li>
+            <li class="cabin-row">
+              <span class="cabin-chain">SOL</span>
+              <span>
+                <span class="cabin-venue">Jupiter</span>
+                <div class="cabin-meta mono">No wallet · shadow tape</div>
+              </span>
+              <span class="mode-paper">PAPER</span>
+            </li>
+            <li class="cabin-row">
+              <span class="cabin-chain">BSC</span>
+              <span>
+                <span class="cabin-venue">PancakeSwap</span>
+                <div class="cabin-meta mono">No key · no live path</div>
+              </span>
+              <span class="mode-paper">PAPER</span>
+            </li>
+            <li class="cabin-row">
+              <span class="cabin-chain">RH</span>
+              <span>
+                <span class="cabin-venue">ETH-tagged books</span>
+                <div class="cabin-meta mono">Paper venue only</div>
+              </span>
+              <span class="mode-paper">PAPER</span>
+            </li>
+            <li class="cabin-row">
+              <span class="cabin-chain">POLY</span>
+              <span>
+                <span class="cabin-venue">Polymarket</span>
+                <div class="cabin-meta mono">Prediction books · paper size</div>
+              </span>
+              <span class="mode-paper">PAPER</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="col-center">
+        <section class="hero">
+          <div class="hero-kicker">
+            <span class="kicker">Cabin · public face</span>
+            <span class="rule">ON-CHAIN FIRST</span>
+          </div>
+          <h1 class="wordmark">PANTHEON</h1>
+          <h2>Multi-cabin crypto trading desk.</h2>
+          <p class="lede">
+            Elite process. Mythic restraint over noise. TRON is the live cabin;
+            SOL, BSC, RH, and Polymarket stay paper until a rail earns size.
+            We publish structure and policy — never fabricated PnL.
+          </p>
+          <p class="lede-zh">
+            多舱位加密交易台。TRON 实盘；其余纸上。纪律与链上结构优先。不编造收益。
+          </p>
+          <div class="rules-hero" aria-label="Hard-rule chips">
+            <span class="rule" data-rule="dd">DD ≤ 5% DAILY</span>
+            <span class="rule" data-rule="halt">HALT 100×</span>
+            <span class="rule" data-rule="cap">TRON CAP 100 TRX + 1000 USDT</span>
+          </div>
+          <div class="cta-row">
+            <a class="cta-desk" data-desk href="#">
+              Enter trading desk <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta-ghost" data-x href="https://x.com/PantheonPTH">Observe <span data-bind="handle">@PantheonPTH</span></a>
+          </div>
+          <p class="desk-url">
+            Desk deep link (rotates — edit <span class="mono">config.js</span>):
+            <a data-desk data-bind="deskHost" href="#">temporary-express-walnut-1pi14hq.vercel.app</a>
+          </p>
+        </section>
+
+        <section class="doctrine" aria-label="Desk doctrine">
+          <article class="doc-cell">
+            <div class="kicker">01 · Method</div>
+            <div class="panel-title">On-chain first</div>
+            <p>Read flows, liquidity, and settlement constraints before narrative. Structure over story.</p>
+          </article>
+          <article class="doc-cell">
+            <div class="kicker">02 · Modes</div>
+            <div class="panel-title">Live vs paper is law</div>
+            <p>Paper cabins harden process. They are not a fake-profit window. Live vs paper stays accurate.</p>
+          </article>
+          <article class="doc-cell">
+            <div class="kicker">03 · Risk</div>
+            <div class="panel-title">Rules before size</div>
+            <p>Daily drawdown cap, 100× halt, TRON notional caps. Policy chips — not a performance claim.</p>
+          </article>
+          <article class="doc-cell">
+            <div class="kicker">04 · Voice</div>
+            <div class="panel-title">Systems over heroes</div>
+            <p>Credit the desk. Sparse, cold, precise. No meme-degen theater. No FOMO CTA.</p>
+          </article>
+        </section>
+      </main>
+
+      <aside class="col-right" aria-label="Staff and observe protocol">
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <div class="kicker">Command</div>
+              <div class="panel-title">Staff</div>
+            </div>
+            <span class="mode-pill">PTH</span>
+          </div>
+          <div class="staff-block" style="border-top:0">
+            <div class="staff-row">
+              <span class="staff-role">Boss</span>
+              <span data-bind="boss">kim God</span>
+            </div>
+            <div class="staff-row">
+              <span class="staff-role">Chief of Staff</span>
+              <span data-bind="cos">Prime</span>
+            </div>
+            <div class="staff-row">
+              <span class="staff-role">Handle</span>
+              <a data-x href="https://x.com/PantheonPTH" data-bind="handle">@PantheonPTH</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel observe" style="flex:1">
+          <div class="panel-head">
+            <div>
+              <div class="kicker">Protocol</div>
+              <div class="panel-title">Observe</div>
+            </div>
+          </div>
+          <div class="obs-row">
+            <span class="obs-tag obs-ok">POST</span>
+            <span>Cabin map, process, on-chain structure, risk framing.</span>
+          </div>
+          <div class="obs-row">
+            <span class="obs-tag obs-ok">POST</span>
+            <span>Hard-rule chips as published policy. Live / paper status.</span>
+          </div>
+          <div class="obs-row">
+            <span class="obs-tag obs-no">NEVER</span>
+            <span>Invented PnL, equity curves, win rates, or sample wins dressed as live.</span>
+          </div>
+          <div class="obs-row">
+            <span class="obs-tag obs-no">NEVER</span>
+            <span>Guaranteed setups, fake urgency, paid-signal cosplay.</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="row-markets" aria-label="Cabin rails">
+      <div class="mkt">
+        <div class="mkt-top"><span>TRON</span><span class="live-pill">LIVE</span></div>
+        <div class="mkt-fig">SUNSWAP</div>
+        <div class="mkt-sub">Cap framed. Watching.</div>
+      </div>
+      <div class="mkt">
+        <div class="mkt-top"><span>SOL</span><span class="mode-paper">PAPER</span></div>
+        <div class="mkt-fig">JUPITER</div>
+        <div class="mkt-sub">Shadow tape only.</div>
+      </div>
+      <div class="mkt">
+        <div class="mkt-top"><span>BSC</span><span class="mode-paper">PAPER</span></div>
+        <div class="mkt-fig">PANCAKE</div>
+        <div class="mkt-sub">No live path.</div>
+      </div>
+      <div class="mkt">
+        <div class="mkt-top"><span>RH</span><span class="mode-paper">PAPER</span></div>
+        <div class="mkt-fig">ETH BOOKS</div>
+        <div class="mkt-sub">Paper venue.</div>
+      </div>
+      <div class="mkt">
+        <div class="mkt-top"><span>POLY</span><span class="mode-paper">PAPER</span></div>
+        <div class="mkt-fig">POLYMARKET</div>
+        <div class="mkt-sub">Books · paper size.</div>
+      </div>
+    </section>
+
+    <section class="row-activity" aria-label="Hard-rule definitions">
+      <div class="act-head">
+        <div>
+          <div class="kicker">Policy tape</div>
+          <div class="panel-title">Hard rules — brand truth, not a scoreboard</div>
+        </div>
+        <span class="rule">NO PnL CHARTS</span>
+      </div>
+      <div class="act-row">
+        <span class="act-code" data-rule="dd">DD ≤ 5%</span>
+        <span>Daily / intraday max drawdown. Kill criterion. Not a reported result.</span>
+      </div>
+      <div class="act-row">
+        <span class="act-code" data-rule="halt">HALT 100×</span>
+        <span>Profit-multiple halt. Stops the book when the multiple is hit. Policy, not a win.</span>
+      </div>
+      <div class="act-row">
+        <span class="act-code" data-rule="cap">TRON CAPS</span>
+        <span>Live rail framing: 100 TRX + 1,000 USDT. Size ceiling — not AUM, not equity.</span>
+      </div>
+    </section>
+
+    <footer class="site-foot">
+      <p><strong>PANTHEON · PTH</strong> · Educational desk presence · Not financial advice · No fabricated returns</p>
+      <p>Boss · <span data-bind="boss">kim God</span> · CoS · <span data-bind="cos">Prime</span></p>
+    </footer>
   </div>
 
-  <header>
-    <h1 class="wordmark">PANTHEON</h1>
-    <div class="short">PTH</div>
-    <div class="rule"></div>
-    <p class="tagline">
-      <strong>Multi-cabin crypto trading desk.</strong><br />
-      Elite process. On-chain first. Mythic restraint over noise.
+  <noscript>
+    <p style="padding:12px;font-family:monospace;background:#0b0d10;color:#e8edf2">
+      JavaScript off. Desk:
+      <a href="https://temporary-express-walnut-1pi14hq.vercel.app">https://temporary-express-walnut-1pi14hq.vercel.app</a>
     </p>
-  </header>
+  </noscript>
 
-  <section class="cabins" aria-label="Trading cabins">
-    <h2>Cabins</h2>
-    <ul>
-      <li><span class="cabin-name">TRON</span><span class="mode live">Live</span></li>
-      <li><span class="cabin-name">SOL</span><span class="mode">Paper</span></li>
-      <li><span class="cabin-name">BSC</span><span class="mode">Paper</span></li>
-      <li><span class="cabin-name">RH</span><span class="mode">Paper</span></li>
-      <li><span class="cabin-name">Polymarket</span><span class="mode">Paper</span></li>
-    </ul>
-  </section>
-
-  <a class="cta" href="https://x.com/PantheonPTH">Follow @PantheonPTH</a>
-
-  <nav class="socials" aria-label="Social links">
-    <!-- Replace # with live URLs when channels exist -->
-    <a href="#">X</a>
-    <a href="#">Telegram</a>
-    <a href="#">Discord</a>
-    <a href="#">YouTube</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Instagram</a>
-  </nav>
-
-  <footer>
-    <p class="meta">Boss · kim God &nbsp;·&nbsp; Chief of Staff · Prime</p>
-    <p>Educational desk presence. No fabricated returns. Not financial advice.</p>
-  </footer>
+  <script src="config.js"></script>
+  <script src="landing.js"></script>
 </body>
 </html>

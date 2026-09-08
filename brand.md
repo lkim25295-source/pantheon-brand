@@ -42,6 +42,12 @@ Elite multi-cabin trading desk. Mythic restraint over noise. Process and on-chai
 - Speak as “the community” when you mean the desk
 
 ## Visual cues
-- Black / gold or black / white
-- Wordmark: **PANTHEON** with **PTH** secondary
+- Public face matches the trading desk chrome (not a thin SaaS template)
+- Tokens: bg `#0b0d10` · panel `#11151b` · line `#1c222b` · ink `#e8edf2` · mute `#7d8794`
+- Live `#3dff8a` · paper `#8b7cff` · loss `#ff5a6a`
+- Type: IBM Plex Sans + JetBrains Mono (same as CABIN · TRON DESK)
+- Wordmark: **PANTHEON** with **PTH** secondary; ◆ mark in header chrome
+- Temple `logo.svg` (black/gold) remains the avatar / media mark
+- Hard-rule chips are policy labels only: `DD ≤ 5%` · `HALT 100×` · `CAP 100 TRX + 1000 USDT`
+- No fabricated PnL, equity curves, or sample wins dressed as live
 - Minimal geometry; no cartoon mascots

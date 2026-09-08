@@ -10,14 +10,19 @@
 ## Proposed Linktree (top → bottom)
 
 ### 1. Primary CTA
-- **Label:** Follow @PantheonPTH on X
-- **Subcopy:** Desk notes · cabin structure · no fake PnL
-- **URL:** `https://x.com/PantheonPTH` *(update if handle URL differs)*
+- **Label:** Enter trading desk
+- **Subcopy:** Live cabin terminal · policy chips · no fake PnL
+- **URL:** set in `config.js` → `deskUrl` (currently the Vercel cabin; rotates)
 
 ### 2. Landing
 - **Label:** Pantheon — Official Landing
-- **Subcopy:** Wordmark · cabins · posture
-- **URL:** *(host `landing.html` or replace with production domain)*
+- **Subcopy:** Desk chrome · cabin map · hard-rule policy
+- **URL:** https://lkim25295-source.github.io/pantheon-brand/
+
+### 2b. X
+- **Label:** Follow @PantheonPTH on X
+- **Subcopy:** Desk notes · cabin structure · no fake PnL
+- **URL:** `https://x.com/PantheonPTH` *(update if handle URL differs)*
 
 ### 3. Telegram
 - **Label:** Telegram Channel

@@ -44,7 +44,7 @@ Avatar mark (`logo.svg`): gold `#c9a227` on `#0a0a0a`
 
 ```js
 // config.js — one place
-deskUrl: "https://temporary-nimble-redwood-gy6a0sy.vercel.app"
+deskUrl: "https://temporary-nimble-celesta-5tjwx29.vercel.app"
 deskPositionsHash: "#positions"  // live lots / session P&L on the desk only
 ```
 

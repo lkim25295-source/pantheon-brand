@@ -3,14 +3,22 @@
   if (!cfg) return;
 
   var deskUrl = cfg.deskUrl;
+  var positionsHash = cfg.deskPositionsHash || "#positions";
+  if (positionsHash.charAt(0) !== "#") positionsHash = "#" + positionsHash;
+  var positionsUrl = deskUrl.replace(/#.*$/, "") + positionsHash;
   var policy = cfg.policy || {};
   var staff = cfg.staff || {};
 
-  document.querySelectorAll("[data-desk]").forEach(function (el) {
-    el.setAttribute("href", deskUrl);
-    el.setAttribute("rel", "noopener noreferrer");
-    el.setAttribute("target", "_blank");
-  });
+  function bindExternal(nodes, href) {
+    nodes.forEach(function (el) {
+      el.setAttribute("href", href);
+      el.setAttribute("rel", "noopener noreferrer");
+      el.setAttribute("target", "_blank");
+    });
+  }
+
+  bindExternal(document.querySelectorAll("[data-desk]"), deskUrl);
+  bindExternal(document.querySelectorAll("[data-desk-positions]"), positionsUrl);
 
   document.querySelectorAll("[data-x]").forEach(function (el) {
     if (cfg.xUrl) {
@@ -21,10 +29,13 @@
   });
 
   var host = "";
+  var positionsHost = "";
   try {
     host = new URL(deskUrl).host;
+    positionsHost = new URL(positionsUrl).host + new URL(positionsUrl).hash;
   } catch (e) {
     host = deskUrl;
+    positionsHost = positionsUrl;
   }
 
   var text = {
@@ -32,6 +43,7 @@
     cos: staff.chiefOfStaff,
     handle: cfg.handle,
     deskHost: host,
+    positionsHost: positionsHost,
   };
   document.querySelectorAll("[data-bind]").forEach(function (el) {
     var key = el.getAttribute("data-bind");

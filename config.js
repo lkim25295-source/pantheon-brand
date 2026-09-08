@@ -6,6 +6,8 @@
  */
 window.PANTHEON = {
   deskUrl: "https://temporary-express-walnut-1pi14hq.vercel.app",
+  /* Live lots / session P&L — desk only. Brand page never publishes a track record. */
+  deskPositionsHash: "#positions",
   handle: "@PantheonPTH",
   xUrl: "https://x.com/PantheonPTH",
   pagesUrl: "https://lkim25295-source.github.io/pantheon-brand/",

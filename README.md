@@ -43,8 +43,9 @@ Avatar mark (`logo.svg`): gold `#c9a227` on `#0a0a0a`
 ## Desk URL
 
 ```js
-// config.js — one constant
+// config.js — one place
 deskUrl: "https://temporary-express-walnut-1pi14hq.vercel.app"
+deskPositionsHash: "#positions"  // live lots / session P&L on the desk only
 ```
 
 Hard-rule chips (policy, not performance) live in the same file: daily DD ≤5%, 100× halt, TRON caps 100 TRX + 1000 USDT.

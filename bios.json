@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "team": "PANTHEON",
+    "short": "PTH",
+    "handle": "@PantheonPTH",
+    "boss": "kim God",
+    "chief_of_staff": "Prime",
+    "note": "No fabricated PnL, returns, or follower counts. Character limits checked per platform."
+  },
+  "platforms": {
+    "x": {
+      "limit": 160,
+      "en": "PANTHEON (PTH). Multi-cabin crypto desk. TRON live · SOL/BSC/RH/Polymarket paper. Elite process. On-chain first. @PantheonPTH",
+      "zh": "PANTHEON（PTH）。多舱位加密交易台。TRON实盘 · SOL/BSC/RH/Polymarket纸上。精英流程，链上优先。@PantheonPTH",
+      "en_chars": 118,
+      "zh_chars": 78
+    },
+    "telegram": {
+      "limit": 70,
+      "en": "PANTHEON · PTH desk · TRON live · paper cabins",
+      "zh": "PANTHEON · PTH交易台 · TRON实盘 · 纸上舱位",
+      "en_chars": 47,
+      "zh_chars": 32,
+      "channel_about_en": "Official Pantheon (PTH) channel. Multi-cabin trading desk. Process over noise. No fake PnL. Follow @PantheonPTH.",
+      "channel_about_zh": "Pantheon（PTH）官方频道。多舱位交易台。流程优于噪音。不编造收益。关注 @PantheonPTH。"
+    },
+    "discord": {
+      "limit_about": 190,
+      "server_name": "PANTHEON | PTH",
+      "en": "PANTHEON (PTH) — multi-cabin crypto trading desk. TRON live; SOL, BSC, RH, Polymarket paper. Elite, cold, on-chain-first. Boss: kim God · CoS: Prime.",
+      "zh": "PANTHEON（PTH）— 多舱位加密交易台。TRON实盘；SOL/BSC/RH/Polymarket纸上。精英、冷峻、链上优先。Boss：kim God · 幕僚长：Prime。",
+      "en_chars": 156,
+      "zh_chars": 95
+    },
+    "linkedin": {
+      "limit_headline": 220,
+      "limit_about_note": "About section can be longer; headline kept tight.",
+      "headline_en": "PANTHEON (PTH) — Multi-cabin crypto trading desk | TRON live · SOL/BSC/RH/Polymarket paper | Building institutional process toward a future company",
+      "about_en": "Pantheon (PTH) is a crypto multi-cabin trading desk. TRON runs live; SOL, BSC, RH, and Polymarket run on paper while the desk hardens process, risk, and on-chain research. Leadership: kim God (Boss), Prime (Chief of Staff). We publish education and desk posture — not fabricated returns. Handle: @PantheonPTH.",
+      "headline_zh": "PANTHEON（PTH）— 多舱位加密交易台 | TRON实盘 · SOL/BSC/RH/Polymarket纸上 | 以机构级流程迈向公司化",
+      "about_zh": "Pantheon（PTH）是一支加密多舱位交易台。TRON 实盘运行；SOL、BSC、RH、Polymarket 以纸上推演打磨流程、风控与链上研究。领导层：kim God（Boss）、Prime（幕僚长）。我们发布教育与台面姿态——不编造收益。账号：@PantheonPTH。"
+    },
+    "instagram": {
+      "limit": 150,
+      "en": "PANTHEON · PTH\nMulti-cabin crypto desk\nTRON live · SOL/BSC/RH/Polymarket paper\nElite. Cold. On-chain first.\n@PantheonPTH",
+      "zh": "PANTHEON · PTH\n多舱位加密交易台\nTRON实盘 · 纸上舱位\n精英·冷峻·链上优先\n@PantheonPTH",
+      "en_chars": 112,
+      "zh_chars": 58
+    },
+    "youtube": {
+      "limit_description": 1000,
+      "channel_name": "PANTHEON PTH",
+      "tagline_en": "Multi-cabin crypto desk · Process over noise",
+      "description_en": "PANTHEON (PTH) — multi-cabin crypto trading desk.\n\nTRON: live\nSOL · BSC · RH · Polymarket: paper\n\nWe cover on-chain structure, cabin discipline, and how a desk becomes a company. No fabricated PnL. No meme-degen theater.\n\nBoss: kim God\nChief of Staff: Prime\nHandle: @PantheonPTH\n\nSubscribe for educational desk notes and cabin briefings.",
+      "description_zh": "PANTHEON（PTH）— 多舱位加密交易台。\n\nTRON：实盘\nSOL · BSC · RH · Polymarket：纸上\n\n内容聚焦链上结构、舱位纪律，以及交易台如何迈向公司化。不编造收益。不做 meme 狂欢。\n\nBoss：kim God\n幕僚长：Prime\n账号：@PantheonPTH\n\n订阅获取教育向台面笔记与舱位简报。"
+    }
+  }
+}
